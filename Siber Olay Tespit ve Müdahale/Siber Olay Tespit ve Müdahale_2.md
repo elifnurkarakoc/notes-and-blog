@@ -2,25 +2,45 @@
 #### Bilgi Toplama - Windows
 
 **whoami**: kullanıcı domain ve adı
+
 **hostname**: sunucu adı
+
 **systeminfo**: işletim sistemi adı ve versiyonu yüklü hotfixler
+
 **whoami /groups**: kullanıcının üyesi olduğu grupları
+
 **net users**: kullanıcı listesi
+
 **net localgroup Administrators**: Administrators grubunun üyeleri 
+
 **net localgroup**: kullanıcı grupları
+
 **tasklist /SVC**: çalışan prosesler ve ilgili servis bilgileri
+
 **ipconfig /all**: ağ arayüz bilgileri
+
 **netstat -ano**: dinleyen ağ servisleri 
+
 **net start**: çalışan servisler
+
 **quser**: sisteme bağlı kullanıcılar
+
 **qprocess**: çalışan uygulamalar ve uygulamaları başlatan kullanıcılar
+
 **driverquery**: driver'lar
+
 **net share**: paylaşımlar
+
 **more %WINDIR%\System32\drivers\etc\hosts**: hosts dosyası
+
 **more %WINDIR%\System32\drivers\etc\networks**: networks dosyası
+
 **gpresult /R**: Group policy
+
 **dsquery group**: domain grup listesi
+
 **dsquery user**: domain kullanıcılarının listesi
+
 **dsquery compute**: domaine'e bağlı bilgisayarların listesi
 
 #### Yetki Yükseltme İmkanları
@@ -37,15 +57,25 @@ Ayrıca lateral movement için kullanılabilen ancak sıradan kullanıcılar tar
 
 #### İzlenmesinde fayda olabilecek bazı komutlar:
 **cscript**: vbscript çalıştırmak için
+
 **del**: parametre olarak bir exe,bat,ps1 dosyası kullanılmışsa
+
 **Sysinternals araçları**: procdump--> bellek dump etmek, accesschk-->erişim hakları sorgulama, psexece--> uzakta komut çalıştırma
+
 **powershell**: powershell fonksiyonalitesini kullanma
+
 **regsvr32**: Applocker kontrolünü aşmak için
+
 **vssadmin**: NTDS.DIT dosyasını çalmak için Volume Shadow Copy alma
+
 **wmic**: WMI fonksiyonalitesini kullanma
+
 **schtasks**: Scheduled iş oluşturmak için
+
 **netsh**: Firewall konfigürasyonunu yönetmek için
+
 **procdump.exe -accepteula -ma lsass.exe lssas.dmp--> lsass.exe** process'inin bellekteki adres alanındaki tüm verilere erişip dump etmek mümkün. O anda veya kısa bir süre önce sisteme erişmiş olan kullanıcıların bilgilerin dump etmiş olunur.
+
 **minidump lsass.dmp** -->yakın zamanda bağlanmış olan kullanıcıların password'leri clean text olarak elde ediliyor.
 
 #### Yetki yükseltme ve sonraki adımlar:
@@ -65,30 +95,50 @@ Bilgi toplama script ve araçlarını ele geçirilen platforma yükleme ve çal�
 
 #### Bilgi Toplama-Linux
 **whoami**: kullanıcı adı
+
 **id**: kullanıcı id'si ve grupları
+
 **hostname**: sunucu adı
+
 **uname -a** :sistem ve kernel bilgisi
+
 **cat /etc/*-release**: işletim sistemi bilgisi
+
 **lscpu**: işlemci mimari bilgisi
+
 **/sbin/ifconfig -a** : tüm ağ ara yüzlerinin listesi
+
 **echo $HOME**: home dizinimiz
+
 **ls -ahl ~**: home dizin içeriğimiz ve erişim hakları 
+
 **printenv**: Environmental variable değerleri
+
 **last**: son kullanıcı aktiviteleri
+
 **netstat -antp**: TCP servislerin ve ilgili proseslerin listesi
+
 **netstat -anup**: UDP servislerin ve ilgili proseslerin listesi
+
 **cat /etc/passwd**: passwd dosyası(tüm kullanıcılar kullanıcıların kimler olduğunu görebilir)
+
 **cat /etc/group**:group dosyası
+
 **cat /etc/shadow**: shadow dosyası(okuma hakkımız var ise)
+
 **cat /etc/sudoers**
 
 
 #### Yanal Hareket:
 
 **PSExec**: Sysinternal da bulunan, uzaktaki bilgisayarda komut çalıştırmamızı sağlayan bir yazılımdır.Bu normal bir davranış değildir. karşı tarafta yeni bir servis başlatılmış oluyor.
+
 **WMI**: Uzaktan kod çalıştırmada, log toplamada vb. oldukça yetenekli. 
+
 **Powershell-WinRM**
+
 **Terminal servisi,ssh** vb.
+
 Ele geçirilen sistem kullanıcı adı ve parola bilgileri ile:
 
  - CrackMapExec(CME)
