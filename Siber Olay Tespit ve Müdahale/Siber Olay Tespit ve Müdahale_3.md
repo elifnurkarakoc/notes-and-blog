@@ -1,4 +1,4 @@
-﻿#### Windows Altyapısından kaynaklanan Zayıflıklar:
+﻿#### Windows Altyapısından Kaynaklanan Zayıflıklar:
 LM ve NTLM kullanıcı doğrulama protokollerindeki zayıflıklar:
  - Windows Authentication Protokolleri ile ilgili temel konular:
 	 - Parola hash'leri 		
