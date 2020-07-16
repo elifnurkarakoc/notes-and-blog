@@ -61,14 +61,18 @@ Playbook'lar(Oyun Taktik Planları): belli türde çok sık rastlanan olaylarda 
 
 <img src="https://github.com/elifnurkarakoc/notes-and-blog/blob/master/Siber%20Olay%20Tespit%20ve%20M%C3%BCdahale/phishing.PNG" width="40%">
 
+
 <img src="https://github.com/elifnurkarakoc/notes-and-blog/blob/master/Siber%20Olay%20Tespit%20ve%20M%C3%BCdahale/phishing-2.PNG" width="40%">
 
 
 <img src="https://github.com/elifnurkarakoc/notes-and-blog/blob/master/Siber%20Olay%20Tespit%20ve%20M%C3%BCdahale/phishing-3.PNG" width="40%">
 
+
 <img src="https://github.com/elifnurkarakoc/notes-and-blog/blob/master/Siber%20Olay%20Tespit%20ve%20M%C3%BCdahale/phishing-4.PNG" width="40%">
 
+
 <img src="https://github.com/elifnurkarakoc/notes-and-blog/blob/master/Siber%20Olay%20Tespit%20ve%20M%C3%BCdahale/phishing-5.PNG" width="40%">
+
 
 Tehdit göstergelerinin belirlenmesi **-->** Risk fAktörlernin belirlenmesi **-->** Veri Toplama **-->** Kategorize Etme **-->** Önceliklendirme
 	Önceliklendirme **-->** Doğrula **-->** IOC'leri belirle **-->** Kurum Sistmelerinin Taranması **-->** Kapsmaın güncellenmesi **-->** Etkilenen tüm noktaları belirle
