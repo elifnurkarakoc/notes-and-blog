@@ -4,9 +4,9 @@
 <img src="https://github.com/elifnurkarakoc/notes-and-blog/blob/master/Siber%20Olay%20Tespit%20ve%20M%C3%BCdahale/1-Incident-Response-Life-Cycle.png" width="40%">
 
 **Preparation**:hazırlık, olay olduktan sonra ne yapabilirizi düşünmekten ziyada olayın ihtimalini düşürebileceğimiz çalışmalarda bu kapsamın içerisinde. 
-	**Detection & Analysis**: olayın tespiti ve analizi
-	**Containment Eradication & Recovery**:saldırganın etki alanını sınırlandırma,saldırganın yaptığı etkinin olumsuz sonuçlarını temizleme yani normal operasyona geri döndürebilme, müdahale sırasında yaptığımız ve fonksiyoneliteyi etkileyen durumları temizleme.
-	**Post-Incident Activity**: olay sonrası değerlendirme, neyi yanlış yaptık karşı taraf neyi yanlış yaptı?
+- **Detection & Analysis**: olayın tespiti ve analizi
+- **Containment Eradication & Recovery**:saldırganın etki alanını sınırlandırma,saldırganın yaptığı etkinin olumsuz sonuçlarını temizleme yani normal operasyona geri döndürebilme, müdahale sırasında yaptığımız ve fonksiyoneliteyi etkileyen durumları temizleme.
+- **Post-Incident Activity**: olay sonrası değerlendirme, neyi yanlış yaptık karşı taraf neyi yanlış yaptı?
 
 **SOC**: Security Operations Center
 - Ana Tema: İzleme
