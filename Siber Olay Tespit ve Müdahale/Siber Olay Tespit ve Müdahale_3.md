@@ -49,8 +49,10 @@ LM, NTLM ve domain yapılarındaki Kerberos protokollerinde anahtar olarak kulla
 
 - (Impersonation) Delegation Tokenların Çalınması
 		2 tür Access Token vardır:
-		- **Primary Access Token**: Bir process'i çalıştıran kullanıcının haklarını taşıyan tokendır.
-		- **Impersonation Access token**: bu token ile istemci sunucu mimarisinde çalışan servislerde sunucu istemci proses'in erişim haklarını taşır.
+		
+	- **Primary Access Token**: Bir process'i çalıştıran kullanıcının haklarını taşıyan tokendır.
+		
+	- **Impersonation Access token**: bu token ile istemci sunucu mimarisinde çalışan servislerde sunucu istemci proses'in erişim haklarını taşır.
 		Delegation Token'lar impersonation token'ların sunucusunun farklı bir bilgisayarda olduğu durumlarda kullanılan özel bir türüdür.
 
 #### Token çalınması ne demektir?
