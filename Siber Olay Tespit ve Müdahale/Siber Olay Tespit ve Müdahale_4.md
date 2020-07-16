@@ -55,7 +55,9 @@ Uzaktan kötüye kullanım imkanı olma ihtimali düşük olsa da zararlı yazı
 Yapılan erişimler SMB portlarına yapılacağından backdor zararlı yazılımı tarafından açılacak bir port kadar dikkat çekmezler.
 
 Diğer bilgisayarlarda işlem yapma imkanı veren diğer komutlar
+
 **schtasks**: Uzaktaki bilgisayar üzerinde iş tanımlama
+
 **sc**: uzaktaki bilgisayar üzerinde servis tanımlama
 
 
