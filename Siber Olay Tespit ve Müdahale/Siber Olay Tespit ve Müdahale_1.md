@@ -31,6 +31,7 @@ Herhangi bir saldırı öncelikle **Reconnaissance** ile başlar. Saldırgan hed
 
 Ağa sızmak için genellikle sosyal mühendislik ve fiziksel sızma yöntemleri tercih edilir. Ağa ilk adım genellikle son kullanıcı bilgisayarı üzerinden atılır.
 Hedefe özel geliştirilmiş zararlı yazılım kullanılır. Hedef bilgisayar üzerindeki koruma önlemlerini minimize eder, genellikle key logger ve screen capture özelliklerini barındırır.
+
 Ele geçirilen sistem erişimin sürekliliği için dışarı yönlü tünel açılabilmesi gereklidir. Bu nedenle bu tür saldırıların engellenebilmesi ve tespiti için en etkili kontrollerden birisi dışarı yönlü filtreleme (**egress filtering**) ve siber istihbarat desteği de bulunan ağ izleme sistemleridir.
 Saldırgan hedefine ulaşmak için ağ içinde sızma testi tekniklerini uygulayarak diğer sistemlere de sızmaya çalışır (**Lateral movement**)
 Saldırgan kritik sistemlerle ilgili yeterince bilgi topladıktan sonra geçerli ve yetkili bir erişime benzer şekilde erişir, bu sayede izlenen sistemler üzerinde şüpheli aktiviteyi minimize eder.
@@ -43,7 +44,7 @@ Kurban sadece bir web sitesini ziyaret ettiğinde bilgisayarına zararlı yazıl
 
 **Kurbanın Zaralı Siteyi Ziyareti**: Saldırgan kurbanı kendi kontrol ettiği bir siteye sosyal mühendislik yöntemiyle yönlendirir. Ya da normal bir web sitesinin HTML injection açıklığını kullanarak bu siteye görünmeyen bir iframe ekler, bu frame kendi kontrol ettiği bir sitenin içeriğini barındırır. Ya da reklam altyapısını kullanarak yayınladığı reklam içeriği ile sonraki adımları gerçekleştirir.
 
-**Exploit Kit**: Saldırganın kontrol ettiği sitenin içeriğine "exploit kit" adı verilen obfuscate edilmiş JavaScript kodlarını ekler. Exploit kit'ler 20$ $-2500$$ fiyat aralığında satın alınabilirler. exploit kit, çok kullanılan browser plugin'lerinin (ör:Flash,Java,PDF Reader v.d.) versiyonlarını inceledikten sonra uygun olan exploiti kullanır.
+**Exploit Kit**: Saldırganın kontrol ettiği sitenin içeriğine "exploit kit" adı verilen obfuscate edilmiş JavaScript kodlarını ekler. Exploit kit'ler 20$-2500$ fiyat aralığında satın alınabilirler. exploit kit, çok kullanılan browser plugin'lerinin (ör:Flash,Java,PDF Reader v.d.) versiyonlarını inceledikten sonra uygun olan exploiti kullanır.
 
 **Downoad ve Ele geçirme**: Tespit edilen açıklığa yönelik kullanılan exploit shellcode'u saldırganın istediği herhangi bir malware'i kurbanın bilgisayarına indirir ve çalıştırır. Saldırgan bir Exploit Kit Panel üzerinden kurduğu altyapının performansını izleyebilir.
 
