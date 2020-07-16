@@ -1,5 +1,5 @@
 ﻿
-#### Bilgi Toplama - Windows
+### Bilgi Toplama - Windows
 
 **whoami**: kullanıcı domain ve adı
 
