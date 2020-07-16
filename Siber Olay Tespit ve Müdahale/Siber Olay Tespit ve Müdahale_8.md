@@ -25,7 +25,9 @@
 <img src="https://github.com/elifnurkarakoc/notes-and-blog/blob/master/Siber%20Olay%20Tespit%20ve%20M%C3%BCdahale/yara-kural%C4%B1-1.PNG" width="40%">
 
 -	Dosya taramaları sırasında zararlı yazılımları bulması için kullanılan bir yöntemdir.
+
 	**strings**:zaralının içerisinde görülen stringler
+	
 	**condition**:kural olarak da zararlının 0. baytından başlayarak şu değerlerin olması gerekiyor ve dosya büyüklüğünün 70KB'den düşük olması gerekiyor ve strings kısmında olan iki string de barındırması gerektiği kural olarak verilmiş.
 
 **Örnek Log alarm ve SIEM Korelasyon Kuralları**
@@ -34,11 +36,11 @@
 	Aynı kaynak IP adresinden bir web sunucusuna yapılan istekelre karşılık 3 dk içinde 20 den fazla 404 statü kodlu yanıt döndürülmesi
 
 **Tipik Zararlı Yazılım Özellikleri**
-	**Dropper**: Resources bölümünden veya uygulama içine gömülmüş çalıştırılabilir kodları dosya sistemine yerleştirme
-	**Registry oluşturma**: Sürekliliği(persistence) garanti altına almak zere belirli registry key'lerine değer yazma
-	**Servis oluşturma**: Sürekliliği(persistence) garanti altına almak üzere drop ettiği veya sonradan dışarıdan çektiği bir çalıştırılabilir kod ile servis oluşturma
-	**Dışarı yönlü erişim**: HTTP(S),DNS,ICMP vd. protokoller içinden tünelleme yöntemi ile dışarı kapı açma veya komuta kontrol sunucusundan emir alma
-	**Kodlanmış veya paketlenmiş kod dosyası formatında olma**: Tersine mühendisliği zorlaştırmak için encoding ve packing metodları ile kendini gizlemeye çalışma
+- **Dropper**: Resources bölümünden veya uygulama içine gömülmüş çalıştırılabilir kodları dosya sistemine yerleştirme
+- **Registry oluşturma**: Sürekliliği(persistence) garanti altına almak zere belirli registry key'lerine değer yazma
+- **Servis oluşturma**: Sürekliliği(persistence) garanti altına almak üzere drop ettiği veya sonradan dışarıdan çektiği bir çalıştırılabilir kod ile servis oluşturma	
+- **Dışarı yönlü erişim**: HTTP(S),DNS,ICMP vd. protokoller içinden tünelleme yöntemi ile dışarı kapı açma veya komuta kontrol sunucusundan emir alma	
+- **Kodlanmış veya paketlenmiş kod dosyası formatında olma**: Tersine mühendisliği zorlaştırmak için encoding ve packing metodları ile kendini gizlemeye çalışma
 
 **Indicator Of Compromise(IOC) Örnekleri**
 -	Dosya hash değeri
